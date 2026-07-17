@@ -1,0 +1,6 @@
+-- ======================================
+-- Superman.lua
+-- Controla todos os poderes do Superman
+-- Projeto: SuperHeroesSystem
+-- Autor: João Pedro
+-- ======================================
