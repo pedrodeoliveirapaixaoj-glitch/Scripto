@@ -1,1 +1,1 @@
-# Scripto
+SuperHeroesSystem é um sistema modular para Roblox Studio desenvolvido em Lua. Inclui GUI, scripts de cliente e servidor, ModuleScripts e RemoteEvents. O projeto traz poderes inspirados no Superman e no Homem-Aranha, como voo, teias, super força, visão de calor e escalada, com código organizado, comentado e fácil de expandir.
