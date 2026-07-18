@@ -1,9 +1,21 @@
--- Scripto App: Main Script
-print("Olá do seu novo App no Scripto!")
+-- Scripto App: AI Engine
+local IA = require("ia_logic")
 
-local function init()
-    print("Inicializando o app...")
-    -- Adicione sua lógica aqui
-end
+print("------------------------------------------")
+print("   SCRIPTO AI - SISTEMA INICIALIZADO     ")
+print("------------------------------------------")
 
-init()
+-- Exemplo de uso do Chat (Opção 1)
+print("\n[Usuário]: Oi")
+print("[IA]: " .. IA.responder("Oi"))
+
+print("\n[Usuário]: Quem é você?")
+print("[IA]: " .. IA.responder("Quem é você?"))
+
+-- Exemplo de Automação (Opção 3)
+print("\n[Sistema]: Solicitando otimização...")
+local resultado = IA.executar_tarefa("otimizar scripts")
+print("[IA]: " .. resultado)
+
+print("\n------------------------------------------")
+print("Aguardando novos comandos...")
