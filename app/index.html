@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripto AI - PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2c3e50">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Scripto AI</h1>
+            <p>Seu assistente inteligente</p>
+        </header>
+        
+        <div id="chat-container" class="chat-box">
+            <div class="message ai">Olá! Eu sou a IA do Scripto. Como posso ajudar?</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Digite uma mensagem ou comando...">
+            <button id="send-btn">Enviar</button>
+        </div>
+        
+        <div class="automation-area">
+            <button onclick="runTask('limpar')">Limpar Sistema</button>
+            <button onclick="runTask('backup')">Fazer Backup</button>
+            <button onclick="runTask('otimizar')">Otimizar Scripts</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(() => console.log('Service Worker registrado com sucesso!'))
+                .catch(err => console.log('Erro ao registrar Service Worker:', err));
+        }
+    </script>
+</body>
+</html>
